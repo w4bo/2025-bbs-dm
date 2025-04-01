@@ -11,20 +11,7 @@ jobs:
           architecture: 'x64'
       - name: Run the notebooks
         run: |
-          sudo apt install build-essential swig python3-dev
-          cd materials
-          python --version
-          pip install -r requirements.txt
-          chmod +x generate.sh
-          ./generate.sh
-          mkdir _site
-          cp *.css _site
-          cp *.html _site
-          ls -las
-      - name: Build local Jupyter
-        run: |
-          cd materials
-          docker build -t jupyter .
+          echo "Hello, World"
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.5.0
         with:
