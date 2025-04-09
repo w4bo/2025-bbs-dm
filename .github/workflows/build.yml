@@ -12,8 +12,3 @@ jobs:
       - name: Run the notebooks
         run: |
           echo "Hello, World"
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.5.0
-        with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: materials/_site # The folder the action should deploy.
